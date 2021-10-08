@@ -1,0 +1,129 @@
+#navbar-header{
+    display: flex;
+}
+#navbar-header .row{
+    margin-top:20px;
+}
+.icons-navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+.texts-navbar{
+    margin-top:10px;
+    display: flex;
+    justify-content:center;
+}
+.image-navbar{
+    display: flex;
+    height: 60px;
+}
+.fav-icon-navbar{
+    font-size: 25px;
+}
+.container-icons{
+    margin-left:20px;
+    text-decoration: none;
+    color:#707070;
+}
+
+.container-texts a {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    text-transform: uppercase;
+    color:#707070;
+    text-decoration: none;
+    margin-left:10px;
+}
+.container-texts a:before {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: red;
+}
+.container-texts a:before {
+    opacity: 0;
+    transform: translateY(- 8px);
+    transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s;
+}
+.container-texts a:after {
+    opacity: 0;
+    transform: translateY(4px);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+.container-texts a:hover:before, a:focus:before, a:hover:after, a:focus:after {
+    opacity: 1;
+    transform: translateY(0);
+}
+.container-texts a:hover:before, a:focus:before {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s;
+}
+.container-texts a:hover:after, a:focus:after {
+    transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s;
+}
+@media(max-width:576px){
+.hidden-mobile{
+    display: none;
+}
+.image-navbar{
+    display: flex;
+    justify-content: center;
+}
+}
+/*Image container*/
+.container-image{
+    margin-top:150px;
+}
+#main-content .icons{
+    font-size:17px;
+}
+.container-text{
+    margin-top:300px;
+    padding-left:200px;
+}
+
+.unchecked{
+    color:#ca3b3a;  
+}
+.rate-value{
+    color:#ca3b3a;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size:20px;
+    margin-left:10px;
+}
+.checked {
+    color:#ca3b3a ;
+}
+.css-button-rounded--grey {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding-top:10px;
+    padding-bottom:35px;
+    padding-right: 29px;
+    padding-left:29px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #495057;
+    background: #495057;
+  }
+  .css-button-rounded--grey:hover {
+    background: #fff;
+    color: #495057
+  }
+
+  @media(max-width:576px){
+    .container-text{
+        padding-left:50px;
+        margin-bottom:30px;
+    }
+}
