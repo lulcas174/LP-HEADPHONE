@@ -1,3 +1,4 @@
+
 #navbar-header{
     display: flex;
 }
@@ -42,7 +43,7 @@
     left: 0;
     right: 0;
     height: 2px;
-    background-color: red;
+    background-color:#ca3b3a;
 }
 .container-texts a:before {
     opacity: 0;
@@ -79,6 +80,16 @@
 }
 #main-content .icons{
     font-size:17px;
+    letter-spacing:3px;
+}
+
+#main-content h1{
+    color:#ca3b3a;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    margin-bottom:30px;
 }
 .container-text{
     margin-top:300px;
@@ -113,13 +124,45 @@
     display: inline-block;
     outline: none;
     border-radius: 5px;
-    border: 2px solid #495057;
-    background: #495057;
+    border: 2px solid #ca3b3a;
+    background: #ca3b3a;
   }
   .css-button-rounded--grey:hover {
     background: #fff;
     color: #495057
   }
+  #main-content .text-below-title{
+    margin-bottom:15px;
+  }
+  #main-content .text-below-title{
+    font-weight: 900;
+    color:#161616;
+    font-size: 17px;
+  }
+  #main-content .stars{
+      margin-bottom:15px;
+  }
+  #main-content .container-text-below-stars{
+    margin-bottom:15px;
+  }
+  .text-below{
+    font-weight: bold;
+    color:#161616;
+    font-size: 17px;
+  }
+  .last-text{
+    color: #707070;
+    font-size: 15px; 
+  }
+  .container-footer-card-left-text{
+      margin-bottom:15px;
+  }
+
+  .value-text h4{
+    color:#161616;
+     font-size: 30px;
+  }
+
 
   @media(max-width:576px){
     .container-text{
