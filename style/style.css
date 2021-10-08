@@ -92,8 +92,8 @@
     margin-bottom:30px;
 }
 .container-text{
-    margin-top:300px;
-    padding-left:200px;
+    margin-top:240px;
+    padding-left:240px;
 }
 
 .unchecked{
@@ -163,10 +163,17 @@
      font-size: 30px;
   }
 
-
+  .button-add-shop{
+      position: relative;
+      left:10%;
+  }
   @media(max-width:576px){
     .container-text{
         padding-left:50px;
         margin-bottom:30px;
+    }
+    .value-text{
+        position:relative;
+        left:3%;
     }
 }
