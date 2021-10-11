@@ -159,8 +159,9 @@
   }
 
   .value-text h4{
+    margin-top:5px;
     color:#161616;
-     font-size: 30px;
+    font-size: 30px;
   }
 
   .button-add-shop{
